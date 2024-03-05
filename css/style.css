@@ -167,6 +167,7 @@
 .section-resume {
   align-items: center;
   padding: 9.6rem 0;
+  
 }
 
 .resume {
@@ -364,6 +365,9 @@
 
 .project-name {
   font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .project-link {
@@ -375,7 +379,7 @@
 .project-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
-  background-color: rgba(122, 102, 255, 0.5);
+  background-color: rgba(122, 102, 255, 0.7);
   transition: all .2s;
 }
 .project-item:hover .project-image {
@@ -467,3 +471,15 @@
 
 }
 
+.more-blogs{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #7b66ff;
+  margin-top: 5rem;
+}
+
+.more-blogs a{
+  text-decoration: none;
+  color: #7b66ff;
+}

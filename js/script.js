@@ -7,25 +7,32 @@ const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     const href = link.getAttribute("href");
 
     // Scroll back to top
-    if (href === "#" || href === "#home")
+    if (href === "#" || href === "#home"){
+      e.preventDefault();
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-
+    }
     // Scroll to other links
     if (href !== "#" && href !== "#home" && href.startsWith("#")) {
+      e.preventDefault();
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
 
+    // Add focus to the clicked link
+    allLinks.forEach(function (link) {
+      link.classList.remove("active");
+    });
+    link.classList.add("active");
     // Close mobile naviagtion
-    if (link.classList.contains("main-nav-link"))
-      headerEl.classList.toggle("nav-open");
+    // if (link.classList.contains("main-nav-link"))
+    //   headerEl.classList.toggle("nav-open");
   });
 });
 
@@ -59,31 +66,7 @@ obs.observe(sectionHeroEl);
 
 
 
-// (Not Working) automatic focus highlighting in the navigation bar 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   const sections = document.querySelectorAll('section');
-//   const navLinks = document.querySelectorAll('nav a');
-
-//   window.addEventListener('scroll', function() {
-//       let current = '';
-
-//       sections.forEach(section => {
-//           const sectionTop = section.offsetTop;
-//           const sectionHeight = section.clientHeight;
-//           if (pageYOffset >= sectionTop - sectionHeight / 3) {
-//               current = section.getAttribute('id');
-//           }
-//       });
-
-//       navLinks.forEach(a => {
-//           a.classList.remove('active');
-//           if (a.getAttribute('href').includes(current)) {
-//               a.classList.add('active');
-//           }
-//       });
-//   });
-// });
 
 
 
