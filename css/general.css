@@ -98,6 +98,8 @@ Medium: 11px
   box-shadow: 0 0 0 0.8rem rgba(161, 147, 255, 0.5);
 }
 
+
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -126,7 +128,7 @@ body {
 
 .grid {
   display: grid;
-  column-gap: 6.4rem;
+  column-gap: 4rem;
   row-gap: 9.6rem;
   margin-bottom: 9.6rem;
 }

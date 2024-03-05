@@ -11,14 +11,14 @@ allLinks.forEach(function (link) {
     const href = link.getAttribute("href");
 
     // Scroll back to top
-    if (href === "#")
+    if (href === "#" || href === "#home")
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
 
     // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
+    if (href !== "#" && href !== "#home" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
@@ -30,7 +30,7 @@ allLinks.forEach(function (link) {
 });
 
 
-// Sticky navigation
+  // Sticky navigation
 
 const sectionHeroEl = document.querySelector(".section-hero");
 
@@ -55,6 +55,37 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+
+
+
+// (Not Working) automatic focus highlighting in the navigation bar 
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const sections = document.querySelectorAll('section');
+//   const navLinks = document.querySelectorAll('nav a');
+
+//   window.addEventListener('scroll', function() {
+//       let current = '';
+
+//       sections.forEach(section => {
+//           const sectionTop = section.offsetTop;
+//           const sectionHeight = section.clientHeight;
+//           if (pageYOffset >= sectionTop - sectionHeight / 3) {
+//               current = section.getAttribute('id');
+//           }
+//       });
+
+//       navLinks.forEach(a => {
+//           a.classList.remove('active');
+//           if (a.getAttribute('href').includes(current)) {
+//               a.classList.add('active');
+//           }
+//       });
+//   });
+// });
+
+
 
 
 // Set current year
