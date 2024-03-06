@@ -239,6 +239,16 @@
   font-weight: 600;
 }
 
+.resume-btn{
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  
+  margin: 3rem auto;
+}
+
+
+
+
 /* *************************** */
 /* Services Section */
 /* *************************** */
