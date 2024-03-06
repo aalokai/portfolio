@@ -299,3 +299,6 @@ body {
 strong {
   font-weight: 500;
 }
+::placeholder{
+  opacity: .5;
+}
