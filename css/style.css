@@ -606,6 +606,11 @@
   color: #333;
 }
 
+.contact-social-icons a:hover{
+  text-decoration: none;
+  color: #7b66ff;
+}
+
 
 
 .contact-message{
