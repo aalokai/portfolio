@@ -50,6 +50,27 @@
 .main-nav-link.nav-cta:active {
   background-color: #7b66ff;
 }
+
+/* MOBILE */
+
+.btn-mobile-nav{
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav{
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+  display: none;
+}
+
+
 .sticky .header {
   position: fixed;
   top: 0;
@@ -247,8 +268,6 @@
 }
 
 
-
-
 /* *************************** */
 /* Services Section */
 /* *************************** */
@@ -323,8 +342,6 @@
   margin-top: 2rem;
 }
 
-
-
 .works {
   max-width: 130rem;
   margin: 0 auto;
@@ -398,8 +415,6 @@
 }
 
 
-
-
 /* *************************** */
 /* My Blogs Section */
 /* *************************** */
@@ -417,12 +432,7 @@
   margin: 0 auto;
   padding: 0 3.2rem;
   align-items: start;
-  
-  
-
 }
-
-
 
 .blog-hr{
   background-color: #7b66ff;
@@ -450,7 +460,6 @@
   font-size: 2.4rem;
   margin-bottom: 1.2rem;
   font-weight: 800;
-  
 
 }
 
@@ -458,35 +467,28 @@
   font-size: 2rem;
   margin-bottom: 2.4rem;
   font-weight: 400;
-
 }
 
 .blog-detail{
   font-size: 2rem;
   margin-bottom: 1.6rem;
   font-weight: 400;
-
 }
 
 .blog-readmore{
   font-size: 2rem;
-  
   font-weight: 700;
-
 }
 
 .blog-link{
   text-decoration: none;
   color: #333;
-
 }
 
 .blog-link:hover{
   color: #7b66ff;
   transition: all .2s ease-in-out;
 }
-
-
 
 .more-blogs{
   text-align: center;
@@ -507,26 +509,19 @@
   transition: all .2s ease-in-out;
 }
 
-
-
 /* *************************** */
 /* Contact Section */
 /* *************************** */
-
 
 .section-contact{
   align-items: center;
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-  
-  
-  
 }
 
 .contact{
   margin-top: 6rem;
-
 }
 
 .contact-box{
@@ -536,37 +531,28 @@
   border-radius: 15px;
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, .15);
   line-height: 1.4;
-  
 }
 
 .contact-address{
-  padding: 3rem;
+  padding: 2.2rem;
   border-top-left-radius: 15px;
-  
+  font-size: 2.2rem;
   background-color: #f1efff;
-  
 }
 
 
 .contact-location{
   margin-top: 5rem;
-  font-size: 2.2rem;
   margin-bottom: 4rem;
   font-weight: 400;
   padding: .2rem;
-  
-  
-
-
 }
 
 
 .contact-email{
-  font-size: 2.2rem;
   margin-bottom: 4rem;
   font-weight: 400;
   padding: .2rem;
-
 }
 
 .contact-email a{
@@ -575,11 +561,9 @@
 }
 
 .contact-phone{
-  font-size: 2.2rem;
   margin-bottom: 4rem;
   font-weight: 400;
   padding: .2rem;
-
 }
 
 .contact-phone a{
@@ -587,18 +571,13 @@
   color: #7b66ff;
 }
 
-
-
 .contact-language{
-  font-size: 2.2rem;
   margin-bottom: 3rem;
   font-weight: 400;
   padding: .2rem;
-
 }
 
 .contact-social{
-  font-size: 2.2rem;
   margin-top: 10rem;
   margin-bottom: 3rem;
   font-weight: 400;
@@ -621,8 +600,6 @@
   color: #7b66ff;
   transition: all .2s ease-in-out;
 }
-
-
 
 .contact-message{
   background-color: #cac1ff;
@@ -655,7 +632,6 @@
   color: inherit;
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  
 }
 
 

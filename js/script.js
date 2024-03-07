@@ -31,8 +31,8 @@ allLinks.forEach(function (link) {
     });
     link.classList.add("active");
     // Close mobile naviagtion
-    // if (link.classList.contains("main-nav-link"))
-    //   headerEl.classList.toggle("nav-open");
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
   });
 });
 
