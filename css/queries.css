@@ -49,7 +49,8 @@ Instead, 1rem=1em=16px */
     }
 
     .gallery {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        
     }
 
     .aboutme-description {
@@ -86,6 +87,10 @@ Instead, 1rem=1em=16px */
         background-color: #f1efff;
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .aboutme-description{
+        font-size: 2.4rem;
     }
 
     .gallery {
